@@ -43,7 +43,11 @@
         }
         
         .footer-col {
-            padding: 30px;
+            padding: 20px;
+        }
+        
+        .footer-col1 {
+            padding: 20px;
         }
         
         .footer-col h3 {
@@ -73,6 +77,10 @@
                 position: static;
             }
             .footer-col {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .footer-col1 {
                 width: 100%;
                 margin-bottom: 20px;
                 padding-left: 50px;
