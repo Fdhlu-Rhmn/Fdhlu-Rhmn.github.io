@@ -10,7 +10,7 @@
 
 
 ## REQUEST CHANGES
-#Page Homepage
+# Page Homepage
     1.	Tampilan Slide Fullscreen
     2.	Border Berita
     3.	Tampilan isi berita
