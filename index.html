@@ -1,138 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" profile="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/e701facadd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Calculator</title>
 </head>
-
 <body>
-    <div class="row">
-        <div class="profile">
-            <div class="card">
-                <div class="profile-left">
-                    <h4>Overview</h4>
-                    <p>Visi Universitas Hasanuddin sebagai pusat keunggulan dalam pengembangan sumber daya manusia, pengetahuan, teknologi, seni, dan budaya berdasarkan Benua Maritim Indonesia merangsang semua untuk melaksanakan program inovatif dan unggul.
-                        Sehubungan dengan tanggung jawab ini, Fakultas Teknik UNHAS telah memutuskan untuk berperan sebagai “Pusat Teknologi”. Kantor manajemen fakultas sebagai simbol untuk program ini terletak di kampus FT UNHAS Gowa disebut Gedung JK-Center
-                        of Technology, JK-CoT. Sebagai lembaga akademik dengan tiga bisnis utama (tiga pilar pendidikan tinggi), manajemen saat ini fokus dalam memenuhi kebutuhan mahasiswa dan staf akademik untuk melakukan kegiatan pembelajaran dan penelitian.</p>
-
-                    <p>Di sisi lain, tanggung jawab sosial universitas yang kurang mendapat perhatian. Dalam rangka memperkuat peran universitas dalam bidang tanggung jawab sosial, dan merumuskan kebijakan FT dalam kegiatan akademik berdasarkan isu terbaru
-                        untuk mempertahankan jaringan dengan para pemangku kepentingan, diperlukan untuk membangun pusat teknologi baru.</p>
-                    <section class="visi">
-                        <h3>Visi</h3>
-                        <p>Pusat keunggulan dalam teknologi inovatif untuk memperkuat tanggung jawab sosial universitas.</p>
-
-                    </section>
-                    <section class="misi">
-                        <h3>Misi</h3>
-                        <ol>
-                            <li>Untuk menyebarluaskan teknologi tepat guna demi meningkatkan kualitas hidup manusia</li>
-                            <li>Untuk mendorong masyarakat dengan teknologi canggih dan kemampuan inovatif</li>
-                            <li>Untuk mentransfer penemuan teknologi dan inovasi guna menciptakan lingkungan hidup hijau</li>
-                        </ol>
-                    </section>
-                </div>
-            </div>
-            <div class="card">
-                <div class="profile-right">
-                    <h4>Tujuan</h4>
-                    <section class="pendek">
-                        <h3>Tujuan Jangka Pendek:</h3>
-                        <ul>
-                            <li>Untuk memberikan layanan satu atap untuk industri, universitas dan pemerintah untuk mengakses sumber daya FT UNHAS.</li>
-                        </ul>
-                        <ul>
-                            <li>Untuk memasarkan produk FT UNHAS berbasis kegiatan penelitian demi kepentingan masyarakat.</li>
-                        </ul>
-                        <ul>
-                            <li>Untuk menarik, mempertahankan dan mengapresiasi akademisi fakultas dan mahasiswa.</li>
-                        </ul>
-                        <ul>
-                            <li>Untuk menghasilkan pendapatan demi penelitian masa depan, pengembangan dan pendidikan.</li>
-                        </ul>
-                        <ul>
-                            <li>Untuk memudahkan dan mempercepat alih teknologi kepada masyarakat.</li>
-                        </ul>
-                    </section>
-                    <section class="panjang">
-                        <h3>Tujuan Jangka Panjang: </h3>
-                        <ul>
-                            <li>Untuk mempertahankan CoT dan sumberdaya dan fasilitas FT UNHAS.</li>
-                        </ul>
-                        <ul>
-                            <li>Untuk memainkan peran penting dalam dunia Pendidikan dan pengabdian masyarakat.</li>
-                        </ul>
-                    </section>
-
-                </div>
-            </div>
-            <div class="card">
-                <!-- <div class="sambutan">
-                    <h4>Sambutan</h4>
-                </div> -->
+    <div class="calculator">
+        <input type="text" class="calculator-screen" value="0" disabled >
+        <div class="calculator-keys">
+            <div class="row">
+                <button class ="all-clear">AC</button>
+                <button class ="operator" value="%">%</button>
+                <button class ="operator" value="/">&divide;</button>
             </div>
 
-
+            <div class="row">
+                <button class ="number" value="7">7</button>
+                <button class ="number" value="8">8</button>
+                <button class ="number" value="9">9</button>
+                <button class ="operator" value="*">&times;</button>
+            </div>
+            <div class="row">
+                <button class ="number" value="4">4</button>
+                <button class ="number" value="5">5</button>
+                <button class ="number" value="6">6</button>
+                <button class ="operator" value="-">-</button>
+            </div>
+            <div class="row">
+                <button class ="number" value="1">1</button>
+                <button class ="number" value="2">2</button>
+                <button class ="number" value="3">3</button>
+                <button class ="operator" value="+">+</button>
+            </div>
+            <div class="row">
+                <button class="number zero-btn" value="0">0</button>
+                <button class="decimal" value=".">.</button>
+                <button class="equal-sign">=</button>
+            </div>
         </div>
     </div>
-    <footer class="footers">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h3>Kontak</h3>
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-location-dot"></i>Jl. Poros Malino Km. 6 Bontomarannu 
-                                92171 Gowa, 
-                                South Sulawesi Indonesia</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-phone"></i>+624 1158 6200
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></i>cot@unhas.ac.id
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://web.facebook.com/profile.php?id=100077243147405&_rdc=1&_rdr"> <i class="fa-brands fa-facebook"></i>Puslantek-CoT</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCrcILWXeC9SEyijulvpbzHw/featured"><i class="fa-brands fa-youtube"></i>Puslantek - CoT</a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/puslantekcot/"><i class="fa-brands fa-instagram"></i>puslantekcot</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Links</h3>
-                    <ul>
-                        <li>
-                            <a href="https://www.unhas.ac.id/">
-                                <i class="fa-solid fa-caret-right"></i></i>Universitas Hasanuddin</a>
-                        </li>
-                        <li>
-                            <a href="https://eng.unhas.ac.id/fakultas/"><i class="fa-solid fa-caret-right"></i></i>Fakultas Teknik Universitas Hasanuddin</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col1">
-                    <a href="https://s11.flagcounter.com/more/Dnvo/"><img src="/assets/bahan.jpg" width="205px" height="205px" alt="Visitors"></a>
-                </div>
-                <div class="footer-col1">
-                    <a href="https://www.unhas.ac.id/"><img src="/assets/bahan2.jpg" style="width: 230px;height:205px;" alt="Visitors"></a>
-                </div>
-                <div class="copyright">
-                    <p>Copyright ©2022 All rights reserved</p>
-                </div>
-            </div>
-    </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>
