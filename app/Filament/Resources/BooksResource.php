@@ -43,6 +43,9 @@ class BooksResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('years')
                     ->numeric(),
+                Forms\Components\TextInput::make('publisher')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('isbn')
                     ->maxLength(255)
                     ->label('ISBN'),

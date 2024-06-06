@@ -35,3 +35,10 @@ Route::get('/about', function () {
 Route::get('/books/{bookId}', function ($bookId) {
     return view('pages.detailsBooks', ['bookId' => $bookId]);
 })->name('detailBooks');
+
+Route::get('/machine-learning', function () {
+    return view('pages.machine-learning');
+})->name('ai');
+Route::get('/token-pages', function () {
+    return view('pages.token-pages');
+})->name('tokens');

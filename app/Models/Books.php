@@ -16,6 +16,7 @@ class Books extends Model
         'size_book',
         'book_page',
         'years',
+        'publisher',
         'isbn',
         'image_featured',
         'tag',

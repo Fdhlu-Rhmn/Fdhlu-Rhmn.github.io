@@ -1,59 +1,71 @@
 <div class="justify-center my-8">
-    <div
-        class="max-w-7xl h-64 w-full items-center rounded overflow-hidden shadow-lg px-5 py-5 md:mx-auto border bg-slate-600 justify-center">
-        <div class="text-white h-full w-full text-center flex justify-center items-center text-7xl"
-            style="letter-spacing: 0.5em;">
-            COMING SOON
-        </div>
-    </div>
     <div class="max-w-7xl w-full md:mx-auto">
         <div class="flex justify-center my-8">
-            <h1 class="text-4xl font-bold border-b-4 border-purple-600 pb-3 me-10">Koleksi Buku</h1>
+            <h1 class="text-2xl h1-color font-bold pb-3 me-10 font-roboto-serif">Recycle 2 earn Token and with innovative blockchain-based solutions. 
+            </h1>
         </div>
     </div>
-    <div
-        class="max-w-7xl w-full items-center rounded overflow-hidden shadow-lg px-5 py-3 md:mx-auto border justify-center">
-        <div class="max-w-7xl w-full md:mx-auto my-2">
-            <div class="grid grid-cols-5 gap-4">
-                @foreach ($books as $book)
-                    <a href="books/{{ $book->id }}">
-                        <div class="border-x-2 border-y-2  p-4 relative rounded-md shadow-lg w-full">
-                            <div class="mb-2 absolute top-0 right-0 bg-transparent text-right">
-                                @php
-                                    $isNewBook = $book->tag == '1' && $book->created_at->gt(\Carbon\Carbon::now()->subYear());
-                                @endphp
-
-                                @if ($isNewBook)
-                                    <span class="px-2 py-1 bg-green-500 text-white text-xs rounded">New Book</span>
-                                @elseif($book->tag == '2')
-                                    <span class="px-2 py-1 bg-red-500 text-white text-xs rounded">Upcoming</span>
-                                    {{-- @else
-                                <span class="px-2 py-1 bg-gray-500 text-white text-xs rounded">Old Book</span> --}}
-                                @endif
-                            </div>
-                            <div class="flex flex-col py-3">
-                                <div class="w-full h-32 bg-gray-200 overflow-hidden">
-                                    <img id="book-image-{{ $book->id }}"
-                                        src="{{ asset('storage/post-images/placeholder.jpeg') }}"
-                                        data-src="{{ asset('storage/' . $book->image_featured) }}" alt="Book Cover"
-                                        class="mb-2 object-cover object-center w-full h-full">
-                                </div>
-                                <span class="mb-2 text-center font-bold">{{ $book->title }}</span>
-                                <span class="text-justify truncate">{{ $book->desc }}</span>
-                                <span class="font-semibold text-gray-900 text-sm py-2">{{ $book->isbn }}</span>
-                            </div>
-                            <span
-                                class="text-sm text-white font-bold rounded-xl bg-purple-500 px-2 py-1">{{ $book->years }}</span>
+    <div class="max-w-7xl h-auto items-center rounded overflow-hidden shadow-lg px-5 py-5 md:mx-auto border bg-color justify-center">
+        <div class="py-5 px-10">
+            <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-full space-x-4">
+                <x-bi-qr-code-scan class="w-16 h-16 ml-3 py-2" style="width: 4rem; height: 4rem; "/>
+                <span class="text-4xl font-roboto-serif mr-5 py-2">Scan Barcode</span>
+            </button>
+        </div>
+        <div class="py-5 px-10">
+            <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4">
+                <x-bi-images class="w-16 h-16 py-2" style="width: 3rem; height: 3rem;"/>
+                <span class="text-2xl font-roboto-serif mr-5 py-2">Upload Barcode</span>
+            </button>
+        </div>
+        
+        <div class="flex justify-between py-4 px-10">
+            <img src="{{ asset('assets/barcode.jpg') }}" alt="barcode" style="width: 36rem; height: 36rem;">
+            <div class="flex bg-color-button items-center px-6 py-10 rounded-md">
+                <ul>
+                    <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
+                        <x-bi-recycle class="w-16 h-16" style="width: 3rem; height: 3rem; font-weight:bold;"/>
+                        <div class="flex flex-col">
+                            <span class="text-white text-2xl font-bold font-roboto-serif">Scan the recyclable </span>
+                            <span class="text-white text-2xl font-bold font-roboto-serif">products</span>
                         </div>
-                    </a>
-                @endforeach
+                    </li>
+                    <li class="flex text-white py-6 px-4 font-bold space-x-4 items-center">
+                        <x-bi-qr-code-scan class="w-16 h-16" style="width: 3rem; height: 3rem; font-weight:bold;"/>
+                        <div class="flex flex-col">
+                            <span class="text-white text-xl font-roboto-serif">Upload your barcode</span>
+                            <span class="text-white text-xl font-bold font-roboto-serif">image</span>
+                        </div>
+                    </li>
+                    <li class="flex text-white py-6 px-4 font-bold space-x-4 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="3rem">
+                            <path fill="#ffffff" d="M184 0c30.9 0 56 25.1 56 56V456c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56V56c0-30.9 25.1-56 56-56z"/>
+                        </svg>                        
+                        <div class="flex flex-col">
+                            <span class="text-white text-xl font-roboto-serif">AI will help you </span>
+                            <span class="text-white text-xl font-roboto-serif">Provide Recycled Materials</span>
+                            <span class="flex flex-col text-white text-xl font-roboto-serif"> Processing Recommendations </span>
+                        </div>
+                    </li>
+                    <li class="flex text-white py-6 px-4 font-bold space-x-4 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="3rem">
+                            <path fill="#ffffff" d="M312 24V34.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24V220.6c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="text-white text-xl font-roboto-serif">Get the tokens</span>
+                            <span class="text-white text-xl font-roboto-serif">according to the </span>
+                            <span class="flex flex-col text-white text-xl font-roboto-serif">product you uploaded</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="flex py-3 justify-end">
-                <a class="text-purple-600 text-lg px-4 flex items-center font-bold" href="/books">
-                    <span>Lihat Selengkapnya</span>
-                    <x-bi-arrow-right class=" px-1 h-6 w-6 font-bold" />
-                </a>
-            </div>
+
+           
+        </div>
+        <div class="py-10 px-10">
+            <button class="text-white bg-color-button items-center flex px-4 py-2 rounded-md space-x-4 width: 10rem;">
+                <a href="/token-pages"  class="text-2xl px-10">Send The Barcode</a>
+            </button>
         </div>
     </div>
 </div>
