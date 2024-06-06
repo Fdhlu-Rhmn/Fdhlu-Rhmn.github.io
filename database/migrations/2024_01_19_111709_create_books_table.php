@@ -16,8 +16,9 @@ return new class extends Migration {
             $table->longText('desc');
             $table->string('writer');
             $table->string('size_book');
-            $table->integer('book_page');
+            $table->string('book_page');
             $table->integer('years');
+            $table->string('publisher');
             $table->string('isbn');
             $table->string('image_featured')->nullable();
             $table->string('tag');

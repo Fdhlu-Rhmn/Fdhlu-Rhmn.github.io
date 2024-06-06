@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap");
+
+@layer components {
+    .warna-text {
+        color: #34a853;
+    }
+    .hover-color {
+        color: #e3f2e1;
+    }
+    .bg-color {
+        background-color: #e3f2e1;
+    }
+    .bg-color-button {
+        background-color: #5faa6f;
+    }
+    .bg-color-fonts {
+        background-color: #CBFFD9;
+    }
+    .h1-color {
+        color: #005312;
+    }
+    .footer-color{
+        background-color:#005312;
+    }
+
+    /* .border-line {
+        border-color: #34a853;
+    } */
+}

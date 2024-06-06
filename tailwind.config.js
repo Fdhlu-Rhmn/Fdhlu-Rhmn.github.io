@@ -6,7 +6,18 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'roboto-serif': ['"Roboto Serif"', 'serif'],  
+      },
+      colors: {
+        'custom-green': {
+          DEFAULT: '#34A853', // Default shade
+          'light': '#E3F2E1', // Lighter shade
+          'dark': '#5FAA6F', // Darker shade
+        },
+      },
+    },
   },
   plugins: [],
 }
