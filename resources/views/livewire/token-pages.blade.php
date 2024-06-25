@@ -13,10 +13,11 @@
             </button>
         </div>
                 
-        <div class="flex justify-between py-2 px-10">
+        <div class="flex justify-between py-2 px-10 space-x-4 space-x-reverse">
             <img src="{{ asset('assets/barcode.jpg') }}" alt="barcode" style="width: 36rem; height: 36rem;">
             <div class="bg-color-button items-center py-4 px-6 rounded-md">
                 <div class="flex bg-color-fonts rounded-md py-2 space-x-4">
+                    
                     <img src="{{ asset('assets/Logo_dispora.png') }}" alt="barcode" class="py-4 px-6" style="width: 7rem; height: 6rem;">
                     <div class="flex flex-col justify-center">
                         <span class="font-roboto-serif mr-5 py-2 font-bold">Dinas Pemuda dan Olahraga</span>

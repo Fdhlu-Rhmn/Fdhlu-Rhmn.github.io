@@ -27,7 +27,7 @@ class ListBook extends Component
                 ->where('tag', '1');
         } elseif ($this->filter === 'upcoming') {
             $query->where('tag', '2');
-        } elseif ($this->filter === 'oldbook') {
+        } elseif ($this->filter === 'oldevents') {
             $query->where('tag', '3');
         }
 

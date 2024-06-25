@@ -13,10 +13,40 @@
             </button>
         </div>
         <div class="py-5 px-10">
-            <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4">
-                <x-bi-images class="w-16 h-16 py-2" style="width: 3rem; height: 3rem;"/>
+            {{-- <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4">
                 <span class="text-2xl font-roboto-serif mr-5 py-2">Upload Barcode</span>
-            </button>
+            </button> --}}
+
+            <form wire:submit="save">
+                <div class="flex space-x-4">
+                    <div class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4 w-1/2" style="width: 24rem;">
+                        <x-bi-images class="w-16 h-16 py-2" style="width: 3rem; height: 3rem;"/>
+                        <input type="file" wire:model="photos" multiple class="">
+                        @error('photos.*') 
+                        <span class="error">{{ $message }}</span> 
+                        @enderror
+                    </div>
+                    <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4 w-1/2" style="width: 24rem;">
+                        <a href="/token-pages"  class="text-xl">Send The Barcode</a>
+                    </button> 
+                </div>
+            </form>
+            
+
+            {{-- <form wire:submit="save" class="flex flex-col">
+                <x-bi-images class="w-16 h-16 py-2" style="width: 3rem; height: 3rem;"/>
+
+                <input type="file" wire:model="photos" multiple class="">
+                <label for="file" class="cursor-pointer font-roboto-serif  text-white p-2 border-none rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Choose Files
+                </label>             
+                @error('photo') <span class="error">{{ $message }}</span> @enderror
+             
+                <button class="text-white bg-color-button items-center flex px-4 py-2 rounded-md space-x-4 width: 10rem;">
+                    <a href="/token-pages"  class="text-2xl px-10">Send The Barcode</a>
+                </button>            
+            </form> --}}
+            
         </div>
         
         <div class="flex justify-between py-4 px-10">
@@ -44,7 +74,7 @@
                         <div class="flex flex-col">
                             <span class="text-white text-xl font-roboto-serif">AI will help you </span>
                             <span class="text-white text-xl font-roboto-serif">Provide Recycled Materials</span>
-                            <span class="flex flex-col text-white text-xl font-roboto-serif"> Processing Recommendations </span>
+                            <span class="flex flex-col text-white text-xl font-roboto-serif">   </span>
                         </div>
                     </li>
                     <li class="flex text-white py-6 px-4 font-bold space-x-4 items-center">
@@ -59,13 +89,9 @@
                     </li>
                 </ul>
             </div>
-
+        </div>
+        {{-- <div class="py-10 px-10">
            
-        </div>
-        <div class="py-10 px-10">
-            <button class="text-white bg-color-button items-center flex px-4 py-2 rounded-md space-x-4 width: 10rem;">
-                <a href="/token-pages"  class="text-2xl px-10">Send The Barcode</a>
-            </button>
-        </div>
+        </div> --}}
     </div>
 </div>

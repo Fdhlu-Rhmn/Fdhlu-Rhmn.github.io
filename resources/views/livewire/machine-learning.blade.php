@@ -13,16 +13,25 @@
             </button>
         </div>
         <div class="py-5 px-10">
-            <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4">
-                <x-bi-images class="w-16 h-16 ml-3 py-2" style="width: 3rem; height: 3rem;"/>
-                <span class="text-2xl font-roboto-serif mr-5 py-2">Upload Product</span>
-            </button>
+            <form wire:submit="save">
+                <div class="flex space-x-4">
+                    <div class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4 w-1/2" style="width: 24rem;">
+                        <x-bi-images class="w-16 h-16 py-2" style="width: 3rem; height: 3rem;"/>
+                        <input type="file" wire:model="photos" multiple class="">
+                        @error('photos.*') 
+                        <span class="error">{{ $message }}</span> 
+                        @enderror
+                    </div>
+                    <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4 w-1/2" style="width: 24rem;">
+                        <a href=""  class="text-xl">Send The Barcode</a>
+                    </button> 
+                </div>
+            </form>
+            
         </div>
-        
-        
-        <div class="flex justify-between py-4 px-10">
-            <img src="{{ asset('assets/barcode.jpg') }}" alt="barcode" style="width: 30rem; height: 30rem;">
-            <div class="flex bg-color-button items-center px-6 py-10 rounded-md">
+        <div class="flex justify-between py-4 px-10 space-x-6">
+            <img src="{{ asset('assets/barcode.jpg') }}" alt="barcode" style="width: 32rem; height: 32rem;">
+            <div class="bg-color-button items-center px-6 py-6 rounded-md">
                 <ul>
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
                         <x-phosphor-brain-bold class="w-16 h-16" style="width: 3rem; height: 3rem; font-weight:bold;"/>
@@ -32,14 +41,15 @@
                             <span class="text-white text-2xl font-bold font-roboto-serif"> Recycle Materials</span>
                         </div>
                     </li>
+                    <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
+                        <div class="flex flex-col">               
+                            <span id="text" class="text-white text-l font-bold font-roboto-serif break-words">                                
+                                {{$results}}
+                            </span>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="py-10 px-10">
-            <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4">
-                <span class="text-2xl px-10">Generate Product</span>
-            </button>
         </div>
     </div>
 </div>

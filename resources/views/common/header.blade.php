@@ -25,12 +25,13 @@
             <nav>
                 <ul class="flex space-x-4">
                     <li><a href="/" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Home</a></li>
-                    <li><a href="/books" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Article</a></li>
-                    <li><a href="/books" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Donation</a></li>
+                    <li><a href="/machine-learning" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Recomendation AI</a></li>
+                    <li><a href="/donation" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Donation</a></li>
                     <li><a href="/about" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">About us</a></li>
-                    <li><a href="/admin"><x-bi-people class="fill-current h-auto w-auto hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg"/></a></li>
-                    <li><a href="/admin"><x-bi-search class="fill-current h-auto w-auto hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg"/></a></li>
+                    {{-- <li><a href="/admin"><x-bi-people class="fill-current h-auto w-auto hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg"/></a></li> --}}
+                    <li><a href="/user-profile"><x-bi-people class="fill-current h-auto w-auto hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg"/></a></li>
                 </ul>
             </nav>
         </div>
     </header>
+</body>

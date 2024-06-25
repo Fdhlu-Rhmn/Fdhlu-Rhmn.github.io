@@ -36,6 +36,25 @@ class UserResource extends Resource
                     ->dehydrateStateUsing(fn($state) => Hash::make($state))
                     ->dehydrated(fn($state) => filled($state))
                     ->required(fn(string $context): bool => $context === 'create'),
+                Forms\Components\TextInput::make('nohp')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('weight')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('token')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('carbon')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\Select::make('role')
+                    ->options([
+                        '0' => 'Admin',
+                        '4' => 'Users',
+                    ])
+                    ->default('0')
+                    ->required(),
             ]);
     }
 
@@ -46,11 +65,15 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('email'),
+                Tables\Columns\TextColumn::make('nohp'),
+                Tables\Columns\TextColumn::make('weight'),
+                Tables\Columns\TextColumn::make('token'),
+                Tables\Columns\TextColumn::make('carbon'),
+                Tables\Columns\TextColumn::make('role'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime(),
-
             ])
             ->filters([
                 //
