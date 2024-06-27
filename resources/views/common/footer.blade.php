@@ -1,4 +1,4 @@
-<footer class="footer-color text-white">
+<footer class="bg-color-button text-white">
     <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
         <!-- Logo and company name -->
         <div class="flex justify-between items-center flex-wrap">
@@ -43,12 +43,12 @@
                         <a href="mailto:masagenapress@gmail.com"
                             class="flex items-center space-x-2 hover:hover-color hover:bg-custom-green-dark p-2 rounded-full">
                             <x-bi-envelope-at-fill class="fill-current" />
-                            <span>EcoHUbMks@gmail.com</span>
+                            <span>EcoHubMks@gmail.com</span>
                         </a>
                     </li>
                     <li class="flex items-center space-x-2 hover:hover-color hover:bg-custom-green-dark p-2 rounded-full">
                         <x-bi-instagram class="fill-current" />
-                        <span>Instagram : Eco   Hub Mks</span>
+                        <span>Instagram : EcoHub Mks</span>
                     </li>
                     <li class="flex items-center space-x-2 hover:hover-color hover:bg-custom-green-dark p-2 rounded-full">
                         <x-bi-youtube class="fill-current" />

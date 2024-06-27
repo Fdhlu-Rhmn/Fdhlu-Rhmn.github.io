@@ -13,13 +13,13 @@
     @livewireStyles
 </head>
 
-<body>
+<body class="bg-slate-100">
     <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
             <!-- Logo and company name here -->
             <div class="flex items-center justify-items-start">
                 <img src="{{ asset('assets/ecohub.jpg') }}" alt="Logo" class="h-14 w-16 mr-3">
-                <span class=" tracking-widest font-bold text-2xl warna-text font-roboto-serif">EcoHub</span>
+                <a href="/" class=" tracking-widest font-bold text-2xl warna-text font-roboto-serif">EcoHub</a>
             </div>
             <!-- Navigation -->
             <nav>

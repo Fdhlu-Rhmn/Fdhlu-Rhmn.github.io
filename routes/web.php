@@ -22,6 +22,9 @@ use Livewire\Livewire;
 Route::get('/beranda', function () {
     return view('pages.beranda');
 })->name('beranda');
+Route::get('/result-ai', function () {
+    return view('pages.result-ai');
+})->name('result');
 
 Route::get('/', function () {
     return view('pages.main');

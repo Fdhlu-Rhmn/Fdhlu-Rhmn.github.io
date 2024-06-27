@@ -56,7 +56,7 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         '.bg-custom': {
-          'background-image': "url('/assets/bg.png')",
+          'background-image': "url('/assets/bg2.png')",
           'background-size': 'cover',
           'background-position': 'center',
         },

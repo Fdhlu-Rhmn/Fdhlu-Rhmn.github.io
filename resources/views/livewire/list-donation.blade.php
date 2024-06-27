@@ -1,6 +1,6 @@
 <div class="flex justify-center my-8">
     <div
-        class="max-w-7xl w-full items-center rounded overflow-hidden shadow-lg px-5 py-5 md:mx-auto border justify-center">
+        class="max-w-7xl w-full items-center rounded overflow-hidden shadow-lg px-5 py-5 md:mx-auto border justify-center bg-color">
         <div class="mb-4 flex justify-between">
             <div class="space-x-2">
                 <button wire:click="setFilter('all')"
