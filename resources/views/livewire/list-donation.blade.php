@@ -46,8 +46,7 @@
                         <div class="flex flex-col py-3"> 
                             <div class="w-full h-32 bg-gray-200 overflow-hidden">
                                 <img id=""
-                                    src=""
-                                    data-src="" alt="Donation Cover"
+                                    src="{{ $donation->image_featured_donation }}"
                                     class="object-cover object-center w-full h-full">
                             </div>
                             <span class="mb-2 text-center text-s truncate"></span>

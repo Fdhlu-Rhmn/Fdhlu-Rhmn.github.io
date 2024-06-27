@@ -47,30 +47,28 @@
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
                         <div class="flex flex-col space-y-4">               
                             <span id="text" class="text-white text-xl font-bold font-roboto-serif text-justify pl-2">                                
-                               1. Segregation at Source: <br>
-                            <span class="text-white text-xl font-normal font-roboto-serif text-justify pl-4">
-                                Separate waste into categories such as organic, recyclable (plastic, glass, metal), and non-recyclable waste.
-                            </span>                            
+                                1. How to reycle waste? <br>
+                            <span class="text-white text-xl font-normal font-roboto-serif text-justify">
+                                Processing plastics through processes such as washing, crushing, melting, and reshaping into new products.                            </span>                            
                             </span>
                         </div>      
                     </li>
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
                         <div class="flex flex-col space-y-4">               
                             <span id="text" class="text-white text-xl font-bold font-roboto-serif text-justify pl-2">                                
-                               2. Segregation at Source: <br>
-                            <span class="text-white text-xl font-normal font-roboto-serif text-justify pl-4">
-                                Separate waste into categories such as organic, recyclable (plastic, glass, metal), and non-recyclable waste.
-                            </span>                            
+                               2. How to utilise the waste into more useful <br>
+                               items?:<br>
+                            <span class="text-white text-xl font-normal font-roboto-serif text-justify">
+                                Soda, milk and juice bottles work well as improvised flower pots. Choose a bottle large enough for the flowers, make a hole of the appropriate size and fill the bottle with soil. Don't forget to make a small hole at the bottom for good water drainage.                            </span>                            
                             </span>
                         </div>     
                     </li>
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
                         <div class="flex flex-col space-y-4">               
                             <span id="text" class="text-white text-xl font-bold font-roboto-serif text-justify pl-2">                                
-                               3. Segregation at Source: <br>
-                            <span class="text-white text-xl font-normal font-roboto-serif text-justify pl-4">
-                                Separate waste into categories such as organic, recyclable (plastic, glass, metal), and non-recyclable waste.
-                            </span>                            
+                                3. What is the impact of the waste ?<br>
+                            <span class="text-white text-xl font-normal font-roboto-serif text-justify">
+                                Plastic bottles take hundreds of years to fully decompose, so they continue to accumulate in the environment and increase pollution.                            </span>                            
                             </span>
                         </div>     
                     </li>
