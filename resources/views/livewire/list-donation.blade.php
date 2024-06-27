@@ -24,7 +24,7 @@
 
         <div class="grid grid-cols-3 gap-4">
             @foreach ($donations as $donation)
-                <a href="/donation-transfer  " class="hover:bg-gray-300">
+                <a href="donation/{{ $donation->id }}  " class="hover:bg-gray-300">
                     <div class="border-2 border-solid py-4 rounded-md shadow-lg -full bg-white font-roboto-serif">
                         <div class="mb-2 pr-2 bg-transparent text-right">
                             @php

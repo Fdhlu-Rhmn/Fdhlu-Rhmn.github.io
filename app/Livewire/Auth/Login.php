@@ -4,6 +4,11 @@ namespace App\Livewire\Auth;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class Login extends Component
 {
@@ -14,20 +19,34 @@ class Login extends Component
         return view('livewire.auth.login');
     }
 
-    public function login()
+    function login(Request $request)
     {
-        $this->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
+        Session::flash('email', $request->email);
+        Session::flash('password', $request->password);
 
-        if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
+        $request->validate(
+            [
+                'email' => 'required|max:255',
+                'password' => 'required|min:8',
+            ],
+            [
+                'email.required' => 'Email wajib diisi',
+                'password.required' => 'Password wajib diisi'
+            ]
+        );
 
-            return redirect()->route('beranda');
+        $infologin = [
+            'email' => $request->email,
+            'password' => $request->password
+        ];
 
+        if (Auth::attempt($infologin)) {
+            $request->session()->regenerate();
+
+            return redirect()->intended('/dashboard');
         } else {
-            session()->flash('error', 'Alamat Email atau Password Anda salah!.');
-            return redirect()->route('auth.login');
+            return redirect('sesi')->with('error', 'Username dan password yang dimasukkan tidak valid'); // Menggunakan with untuk meneruskan pesan kesalahan
         }
     }
+
 }

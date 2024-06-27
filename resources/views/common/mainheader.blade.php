@@ -24,7 +24,7 @@
             <!-- Navigation -->
             <nav>
                 <ul class="flex space-x-4">
-                    <li><a href="/login" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Login</a></li>
+                    <li><a href="/login" class="text-white bg-color-button p-2 rounded-lg">Login</a></li>
                     {{-- <li><a href="/machine-learning" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Recomendation AI</a></li>
                     <li><a href="/donation" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">Donation</a></li>
                     <li><a href="/about" class="text-gray-600 hover:hover-color hover:bg-custom-green-dark p-2 rounded-lg">About us</a></li>

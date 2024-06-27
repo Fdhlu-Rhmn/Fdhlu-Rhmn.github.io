@@ -18,9 +18,9 @@
             <div class="bg-color-button items-center py-4 px-6 rounded-md">
                 <div class="flex bg-color-fonts rounded-md py-2 space-x-4">
                     
-                    <img src="{{ asset('assets/Logo_dispora.png') }}" alt="barcode" class="py-4 px-6" style="width: 7rem; height: 6rem;">
+                    <img src="{{ asset('assets/ecohub-nobg.png') }}" alt="barcode" class="py-4 px-6" style="width: 7rem; height: 6rem;">
                     <div class="flex flex-col justify-center">
-                        <span class="font-roboto-serif mr-5 py-2 font-bold">Dinas Pemuda dan Olahraga</span>
+                        <span class="font-roboto-serif mr-5 py-2 font-bold">Echohub Company</span>
                         <span class="font-roboto-serif mr-5 py-2 font-bold">87658-9878-9879</span>
                     </div>
                 </div>
@@ -28,16 +28,16 @@
                     <div class="flex justify-center space-x-6">
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Items</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">2x sampah plastik</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">4x botol plastik</span>
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Token</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">10</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">1</span>
 
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Gram</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">100</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">1000</span>
 
                         </div>
                         <div class="flex flex-col">
@@ -55,17 +55,17 @@
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Token</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">10</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">0.5</span>
 
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Gram</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">100</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">500</span>
 
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Carbon</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">100</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">50</span>
                         </div>
                     </div>
                 </div>
@@ -73,21 +73,21 @@
                     <div class="flex justify-center space-x-6">
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Items</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">2x sampah plastik</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">3x sampah plastik</span>
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Token</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">10</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">0.75</span>
 
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Gram</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">100</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">750</span>
 
                         </div>
                         <div class="flex flex-col">
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Carbon</span>
-                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">100</span>
+                            <span class="font-roboto-serif text-xs px-4 py-2 font-bold">75,5</span>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="flex justify-between space-x-4">
                     <div class="bg-color-fonts py-2 px-2 rounded-md flex flex-col  items-center justify-center">
                         <span class="font-roboto-serif text-l px-4 font-bold">Total Items</span>
-                        <span class="font-roboto-serif text-2xl px-4 py-2 font-bold">16</span>
+                        <span class="font-roboto-serif text-2xl px-4 py-2 font-bold">9</span>
                     </div>
                     <div class="bg-color-fonts py-4 px-2 rounded-md flex flex-col">
                         <div class="flex px-6 py-2 space-x-6 justify-between">
@@ -108,7 +108,7 @@
                                 </svg>
                                 <span class="font-roboto-serif text-l font-bold">Total Carbon</span>
                             </div>
-                            <span class="font-roboto-serif text-l font-bold">16</span>
+                            <span class="font-roboto-serif text-l font-bold">225,5</span>
                         </div>
                         <div class="flex px-6 py-2 space-x-6 justify-between">
                             <div class="flex items-center space-x-2">
@@ -117,7 +117,7 @@
                                 </svg>
                                 <span class="font-roboto-serif text-l font-bold">Total Weight</span>
                             </div>  
-                            <span class="font-roboto-serif text-l font-bold">16</span>
+                            <span class="font-roboto-serif text-l font-bold">2250</span>
                         </div>
                         <div class="flex px-6 py-2 space-x-6 justify-between">
                             <div class="flex items-center space-x-2">
@@ -126,7 +126,7 @@
                                 </svg>
                                 <span class="font-roboto-serif text-l font-bold">Total Token</span>
                             </div>
-                            <span class="font-roboto-serif text-l font-bold">16</span>
+                            <span class="font-roboto-serif text-l font-bold">2.25</span>
                         </div>
 
                     </div>
@@ -138,7 +138,7 @@
 
         <div class="py-10 px-10 flex justify-center">
             <div class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4">
-                <span class="text-2xl px-10">Claim The Token</span>
+                <a href="/claim-token" class="text-2xl px-10">Claim The Token</a>
             </div>
         </div>
     </div>

@@ -29,7 +29,7 @@
                         <span class="text-l font-roboto-serif mr-5 py-2 text-left px-2  h1-color">Eco Wallet</span>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-l font-bold font-roboto-serif mr-5 py-2 text-left h1-color">0</span>
+                        <span class="text-l font-bold font-roboto-serif mr-5 py-2 text-left h1-color">2.25</span>
                         <img src="{{ asset('assets/ecohub-nobg.png') }}" alt="Logo" class="h-10 w-12">
                     </div>
                 </div>
@@ -86,6 +86,19 @@
                     </div> --}}
                 </form>
                 
+    
+                {{-- <form wire:submit="save" class="flex flex-col">
+                    <x-bi-images class="w-16 h-16 py-2" style="width: 3rem; height: 3rem;"/>
+    
+                    <input type="file" wire:model="photos" multiple class="">
+                    <label for="file" class="cursor-pointer font-roboto-serif  text-white p-2 border-none rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        Choose Files
+                    </label>             
+                    @error('photo') <span class="error">{{ $message }}</span> @enderror
+                 
+                         
+                </form> --}}
+                
             </div>
             
             <div class="flex justify-between py-2 px-10">
@@ -132,3 +145,23 @@
         </div>  
     </div>
 </div>
+
+{{-- <script>
+    // Configure Webcam.js
+    Webcam.set({
+        width: 640,
+        height: 480,
+        image_format: 'jpeg',
+        jpeg_quality: 90
+    });
+    Webcam.attach('#my_camera');
+
+    // Take a snapshot and display it
+    function takeSnapshot() {
+        Webcam.snap(function(data_uri) {
+            // Display the result
+            document.getElementById('my_result').innerHTML = 
+                '<img src="' + data_uri + '"/>';
+        });
+    }
+</script> --}}

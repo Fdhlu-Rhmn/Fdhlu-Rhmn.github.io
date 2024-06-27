@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class Books extends Component
+class ClaimToken extends Component
 {
     public function render()
     {
-        return view('livewire.books');
+        return view('livewire.claim-token');
     }
 }

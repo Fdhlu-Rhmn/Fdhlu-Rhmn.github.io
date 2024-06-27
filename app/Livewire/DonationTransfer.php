@@ -4,6 +4,8 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Transfer;
+use App\Models\Donation;
+
 
 class DonationTransfer extends Component
 {
@@ -37,4 +39,5 @@ class DonationTransfer extends Component
         return redirect()->route('donation');
 
     }
+    
 }
