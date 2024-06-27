@@ -41,7 +41,7 @@ class DonationResource extends Resource
                     ->disk('public')
                     ->image()
                     ->reactive()
-                    ->directory('barcode-images'),
+                    ->directory('donation-images'),
                 Forms\Components\Select::make('tag')
                     ->options([
                         '1' => 'New Events',

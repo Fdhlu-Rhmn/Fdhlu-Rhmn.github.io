@@ -33,7 +33,7 @@
                         <x-phosphor-brain-bold class="w-16 h-16" style="width: 3rem; height: 3rem; font-weight:bold;"/>
                         <div class="flex flex-col pt-4">               
                             <span class="text-white text-xl font-bold font-roboto-serif text-center py-2">Ai Result Recomendations for Processing Recycle Materials</span>
-                            <span class="text-white font-normal font-roboto-serif text-sm text-center py-2">This feature provides a solution by incentivising tokens for recycling, reducing waste and encouraging environmental sustainability.</span>
+                            <span class="text-white font-normal font-roboto-serif text-sm text-center py-2">The AI feature provides recommendations on how to turn waste into useful new products.</span>
                         </div>
                     </li>
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">

@@ -43,6 +43,7 @@
             <h1 class="text-2xl h1-color font-bold pb-3 me-10 font-roboto-serif">Upload Your Image Barcode to Claim the Token
             </h1>
         </div>
+ 
         <div class="max-w-7xl h-auto items-center rounded overflow-hidden shadow-lg px-5 py-5 md:mx-auto border bg-color justify-center">
             
             {{-- <div class="py-5 px-10 flex  justify-center">
@@ -70,7 +71,8 @@
                         </div>
                         <button class="text-white bg-color-button items-center flex px-2 py-2 rounded-md space-x-4 width: 10rem;">
                             <a href="/token-pages"  class="text-l font-roboto-serif px-2">Send The Barcode</a>
-                        </button>       
+                        </button>
+                            
                     </div>
                     
                     {{-- <div class="flex space-x-4">
@@ -143,3 +145,23 @@
         </div>  
     </div>
 </div>
+
+{{-- <script>
+    // Configure Webcam.js
+    Webcam.set({
+        width: 640,
+        height: 480,
+        image_format: 'jpeg',
+        jpeg_quality: 90
+    });
+    Webcam.attach('#my_camera');
+
+    // Take a snapshot and display it
+    function takeSnapshot() {
+        Webcam.snap(function(data_uri) {
+            // Display the result
+            document.getElementById('my_result').innerHTML = 
+                '<img src="' + data_uri + '"/>';
+        });
+    }
+</script> --}}
