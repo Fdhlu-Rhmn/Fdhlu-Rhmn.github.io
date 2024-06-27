@@ -1,5 +1,5 @@
 <div class="flex flex-col  justify-center my-8">
-    <div class="max-w-7xl w-full items-center rounded overflow-hidden shadow-lg px-5 py-3 my-5 md:mx-auto border justify-center ">
+    <div class="max-w-7xl w-full items-center rounded overflow-hidden shadow-lg px-5 py-3 my-5 md:mx-auto border justify-center bg-color">
         <div class="flex flex-col md:flex-shrink-0">
             <div class="flex justify-center my-4">
                 <h1 class="text-4xl font-bold border-b-2 border-purple-600 pb-1 me-10">YAYASAN MASAGENA CENTER</h1>
@@ -56,7 +56,7 @@
             </div>               
         </div>
     </div>
-    <div class="max-w-7xl w-full items-center rounded overflow-hidden shadow-lg px-5 py-5 my-5 md:mx-auto border justify-center">
+    <div class="max-w-7xl w-full items-center rounded overflow-hidden shadow-lg px-5 py-5 my-5 md:mx-auto border justify-center bg-color">
         <div class="flex flex-col md:flex-shrink-0">
             <div class="flex justify-center my-4">
                 <h1 class="text-4xl font-bold border-b-2 border-purple-600 pb-1 me-10 ">Susunan Pengurus</h1>

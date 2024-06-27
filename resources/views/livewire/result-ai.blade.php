@@ -12,7 +12,7 @@
                 <span class="text-2-xl font-roboto-serif mr-5 py-2">Ai Result</span>
             </button>
         </div>
-        <div class="py-5 px-10">
+        {{-- <div class="py-5 px-10">
             <form wire:submit="save">
                 <div class="flex space-x-4">
                     <div class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4 w-1/2" style="width: 24rem;">
@@ -26,12 +26,12 @@
                         @enderror
                     </div>
                     <button class="text-white bg-color-button items-center flex px-2 py-2 rounded-md space-x-4 width: 10rem;">
-                        <a href="/result-ai"  class="text-l font-roboto-serif px-2">Send The Image</a>
+                        <a href="/token-pages"  class="text-l font-roboto-serif px-2">Send The Image</a>
                     </button>       
                 </div>
             </form>
             
-        </div>
+        </div> --}}
         <div class="flex justify-between py-4 px-10 space-x-6 ">
             <img src="{{ asset('assets/botol.jpg') }}" alt="barcode" style="width: 32rem; height: 32rem;">
             <div class="bg-color-button items-center px-6 py-6 rounded-md justify-center">
@@ -46,25 +46,33 @@
                     </li>
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
                         <div class="flex flex-col space-y-4">               
-                            <span id="text" class="text-white text-xl font-bold font-roboto-serif break-words">                                
-                                1. How to recycle the waste ?
+                            <span id="text" class="text-white text-xl font-bold font-roboto-serif text-justify pl-2">                                
+                               1. Segregation at Source: <br>
+                            <span class="text-white text-xl font-normal font-roboto-serif text-justify pl-4">
+                                Separate waste into categories such as organic, recyclable (plastic, glass, metal), and non-recyclable waste.
                             </span>                            
+                            </span>
                         </div>      
                     </li>
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
                         <div class="flex flex-col space-y-4">               
-                            <span id="text" class="text-white text-xl font-bold font-roboto-serif break-words">                                
-                                2. How to utilise the waste into more useful <br> items ?
-                            </span>                               
-                        </div>
+                            <span id="text" class="text-white text-xl font-bold font-roboto-serif text-justify pl-2">                                
+                               2. Segregation at Source: <br>
+                            <span class="text-white text-xl font-normal font-roboto-serif text-justify pl-4">
+                                Separate waste into categories such as organic, recyclable (plastic, glass, metal), and non-recyclable waste.
+                            </span>                            
+                            </span>
+                        </div>     
                     </li>
                     <li class="flex text-white py-4 px-4 font-bold space-x-4 items-center">
-
                         <div class="flex flex-col space-y-4">               
-                            <span id="text" class="text-white text-xl font-bold font-roboto-serif break-words">                                
-                                3. What is the impact of the waste ?
-                            </span>                          
-                        </div>
+                            <span id="text" class="text-white text-xl font-bold font-roboto-serif text-justify pl-2">                                
+                               3. Segregation at Source: <br>
+                            <span class="text-white text-xl font-normal font-roboto-serif text-justify pl-4">
+                                Separate waste into categories such as organic, recyclable (plastic, glass, metal), and non-recyclable waste.
+                            </span>                            
+                            </span>
+                        </div>     
                     </li>
                 </ul>
             </div>
