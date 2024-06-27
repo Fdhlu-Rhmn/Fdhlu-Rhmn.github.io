@@ -8,8 +8,8 @@
     <div class="max-w-7xl h-auto items-center rounded overflow-hidden shadow-lg px-5 py-5 md:mx-auto border bg-color justify-center">
         <div class="py-5 px-10">
             <button class="text-white bg-color-button items-center flex px-6 py-2 rounded-full space-x-4">
-                <x-bi-qr-code-scan class="w-16 h-16 ml-3 py-2" style="width: 4rem; height: 4rem; "/>
-                <span class="text-4xl font-roboto-serif mr-5 py-2">Scan Barcode</span>
+                <x-bi-qr-code-scan class="w-16 h-16 ml-3 py-2" style="width: 3rem; height: 3rem; "/>
+                <span class="text-2xl font-roboto-serif mr-5 py-2">Claim Your Token</span>
             </button>
         </div>
                 
@@ -27,7 +27,6 @@
                 <div class=" bg-color-fonts rounded-md py-2 mt-4">
                     <div class="flex justify-center space-x-6">
                         <div class="flex flex-col">
-                            
                             <span class="font-roboto-serif text-xs px-4 py-2 font-thin">Items</span>
                             <span class="font-roboto-serif text-xs px-4 py-2 font-bold">2x sampah plastik</span>
                         </div>

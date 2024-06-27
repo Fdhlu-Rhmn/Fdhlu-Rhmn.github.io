@@ -4,14 +4,14 @@
         <div class="flex justify-between items-center flex-wrap">
             <div class="flex items-center justify-items-start">
                 <img src="{{ asset('assets/ecohub-removebg.png') }}" alt="Logo" class="h-14 w-16 mr-3">
-                <span class=" tracking-widest font-semibold text-2xl text-white font-roboto-serif" style="letter-spacing: 0.5em;">Eco  Hub</span>
+                <span class=" tracking-widest font-semibold text-2xl text-white font-roboto-serif">EcoHub</span>
             </div>
 
             <!-- Navigation links -->
             <div class="order-3 md:order-2">
                 <ul class="flex flex-wrap justify-center items-center space-x-4 mt-4 md:mt-0">
                     <li>
-                        <a href="/" class="hover:hover-color hover:bg-custom-green-dark p-2 rounded-full">Home </a>
+                        <a href="/beranda" class="hover:hover-color hover:bg-custom-green-dark p-2 rounded-full">Home </a>
                     </li>
                     <li>
                         <a href="/books" class="hover:hover-color hover:bg-custom-green-dark p-2 rounded-full">Article</a>

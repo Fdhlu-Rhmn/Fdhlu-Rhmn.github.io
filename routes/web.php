@@ -19,9 +19,13 @@ use Livewire\Livewire;
 // Route::get('/foo', function () {
 //     Artisan::call('storage:link');
 // });
-Route::get('/', function () {
+Route::get('/beranda', function () {
     return view('pages.beranda');
 })->name('beranda');
+
+Route::get('/', function () {
+    return view('pages.main');
+})->name('main');
 
 
 
@@ -60,7 +64,7 @@ Route::get('/donation', function () {
 
 Route::get('/donation-transfer', function () {
     return view('pages.donation-transfer');
-})->name('donation');
+})->name('donation-transfer');
 
 Route::group(['middleware' => 'auth'], function () {
 
