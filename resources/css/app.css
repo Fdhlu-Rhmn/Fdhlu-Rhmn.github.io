@@ -25,6 +25,18 @@
     .footer-color{
         background-color:#005312;
     }
+    .border-color-green{
+        border-color: #5faa6f;
+    }
+    .line-clamp-3 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+    .text-size{
+        font-size: 8px;
+    }
 
     /* .border-line {
         border-color: #34a853;

@@ -21,6 +21,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'nohp',
+        'weight',
+        'token',
+        'carbon',
+        'role',
     ];
 
     /**
@@ -42,4 +47,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function canAccessFilament(): bool
+    {
+        return in_array($this->role, array('0','1','2','3'));
+    } 
 }
