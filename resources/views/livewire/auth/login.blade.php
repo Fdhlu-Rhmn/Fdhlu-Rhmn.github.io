@@ -11,10 +11,10 @@
           <div class="mt-2">
             <input wire:model.lazy="email" id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
-          @error('email')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
+                @error('email')
+                  <div class="invalid-feedback">
+                      {{ $message }}
+                  </div>
                 @enderror
         </div>
         <div>
@@ -28,11 +28,11 @@
           <div class="mt-2">
             <input wire:model.lazy="password" id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 @error('email') is-invalid @enderror">
           </div>
-          @error('password')
+              @error('password')
                 <div class="invalid-feedback">
                     {{ $message }}
                 </div>
-                @enderror
+              @enderror
         </div>
   
         <div>
@@ -41,37 +41,3 @@
       </form>
     </div>
 </div>
-
-{{-- <div class="card border-0 rounded shadow">
-    <div class="card-body">
-        <h5 class="text-center"> <i class="fa fa-user-circle"></i> LOGIN</h5>
-        <hr>
-        <form wire:submit.prevent="login">
-
-            <div class="form-group">
-                <label class="font-weight-bold">ALAMAT EMAIL</label>
-                <input type="text" wire:model.lazy="email"
-                    class="form-control @error('email') is-invalid @enderror"
-                    placeholder="Alamat Email">
-                @error('email')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
-
-            <div class="form-group">
-                <label class="font-weight-bold">PASSWORD</label>
-                <input type="password" wire:model.lazy="password"
-                    class="form-control @error('password') is-invalid @enderror" placeholder="Password">
-                @error('password')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
-        </form>
-    </div>
-</div> --}}

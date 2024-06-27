@@ -38,4 +38,18 @@ class MachineLearning extends Component
             $photo->store(path: 'photos');
         }
     }
+    public $file;
+    public $uploadedFilePath;
+
+    public function uploadFile()
+    {
+        $this->validate([
+            'file' => 'required|mimes:jpg,jpeg,png,pdf|max:2048',
+        ]);
+
+        $fileName = time() . '.' . $this->file->getClientOriginalExtension();
+        $this->uploadedFilePath = $this->file->storeAs('uploads', $fileName);
+
+        $this->reset('file');
+    }
 }

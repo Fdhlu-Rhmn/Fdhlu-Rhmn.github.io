@@ -2,7 +2,7 @@
     @include('common.header')
 </div>
 
-<livewire:detail-book :book-id="$bookId" />
+@livewire('claim-token')
 
 <div id="footer" wire:loading.class="hidden">
     @include('common.footer')

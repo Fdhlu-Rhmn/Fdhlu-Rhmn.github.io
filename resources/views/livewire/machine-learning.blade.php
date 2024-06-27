@@ -13,6 +13,7 @@
             </button>
         </div>
         <div class="py-5 px-10">
+            
             <form wire:submit="save">
                 <div class="flex space-x-4">
                     <div class="text-white bg-color-button items-center flex px-6 py-2 rounded-md space-x-4 w-1/2" style="width: 24rem;">
